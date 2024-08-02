@@ -1,0 +1,78 @@
+
+.slide:hover{
+  color: #333;
+  background-color: rgb(144, 168, 173);
+  
+}
+
+
+.navbar-header {
+    background-color: #333;
+    padding: 10px 20px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-toggle {
+    display: none; /* Hide the toggle button by default */
+  }
+  
+  .navbar-menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar-item {
+    margin-left: 20px;
+  }
+  
+  .navbar-link,
+  .navbar-signin {
+    color: #fff;
+    text-decoration: none;
+    background: none;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .navbar-link:hover,
+  .navbar-signin:hover {
+    background-color: #575757;
+    border-radius: 4px;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .navbar-toggle {
+      display: block; /* Show the toggle button */
+    }
+  
+    .navbar-menu {
+      flex-direction: column;
+      display: none; /* Hide the menu by default */
+      width: 100%;
+    }
+  
+    .navbar-menu.show {
+      display: flex; /* Show the menu when toggled */
+    }
+  
+    .navbar-item {
+      margin: 10px 0;
+      text-align: center;
+    }
+  }
+  

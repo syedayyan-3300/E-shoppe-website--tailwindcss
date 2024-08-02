@@ -1,0 +1,90 @@
+header {
+    background: rgb(247,248,248);
+    color: rgb(207, 164, 162);
+    padding: 10px 0;
+    text-align: center;
+  }
+  .signin{
+    border-radius: 20px;
+    color: black;
+    font: bold;
+    background: hsl(199, 57%, 60%);
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: 
+    hsl(0, 0%, 94%);
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  .slider {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .slider-wrapper {
+    display: flex;
+    width: 100%; /* 3 slides, each taking 100% width of the slider */
+    animation: slide 15s infinite;
+  }
+  
+  .slide {
+    width: 33.33%; /* Each slide takes 1/3 of the slider width */
+    margin-right: 20px;
+    transition: transform 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(247,248,248);
+    padding: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .slide img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    33% {
+      transform: translateX(-33.33%);
+    }
+    66% {
+      transform: translateX(-66.66%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
